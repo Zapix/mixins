@@ -11,7 +11,7 @@ setup(
     package_dir={'mixins': 'mixins'},
     include_package_data=True,
     packages=find_packages(),
-    classifires=[
+    classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Django",
