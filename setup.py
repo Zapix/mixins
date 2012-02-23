@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-mixins',
-    version='0.1.2',
+    version='0.1.3',
     keywords='django, mixins, models',
     author='Aleksandr Aibulatov',
     author_email='zap.aibulatov@gmail.com',
