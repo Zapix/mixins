@@ -28,8 +28,8 @@ class JSONResponseMixin(JSONResponse):
         return self.get_json_response(self.convert_context_to_json(context))
 
 
-class AJAXJSONResponseMixin(JSONResponse):
-    def ajax_render(sekf, context):
+class AjaxJSONResponseMixin(JSONResponse):
+    def ajax_render(self, context):
         '''
         Return a JSON response containing 'context' as payload
         '''
