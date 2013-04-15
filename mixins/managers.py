@@ -9,7 +9,7 @@ class EnableQuerySet(QuerySet):
     '''
     Adds enable function for queryset
     '''
-    def enable(self):
+    def get_enabled(self):
         return self.filter(enabled=True)
 
 
@@ -21,8 +21,8 @@ class EnableManager(Manager):
     def get_query_set(self):
         return EnableQuerySet(self.model, using=self._db)
 
-    def enable(self):
-        return self.get_query_set().enable()
+    def get_enabled(self):
+        return self.get_query_set().get_enabled()
 
 class StartExpireQuerySet(QuerySet):
     '''

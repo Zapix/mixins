@@ -36,7 +36,7 @@ def enable_mixin(cls=None, status=True, set_manager=True, mixin=False):
         '''
         Enable AbstractModels
         '''
-        enbaled = models.BooleanField(_('Enabled'), default=status)
+        enabled = models.BooleanField(_('Enabled'), default=status)
 
         class Meta:
             abstract = True
